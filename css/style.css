@@ -82,7 +82,9 @@ body{
     background-color: #777777;
     width: 100%;
     display: flex;
-    z-index: 2;
+    height: 80px;
+    text-align: center;
+    align-items: center;
 }
 
 
@@ -130,6 +132,12 @@ body{
 
 .menu__link:hover{
     border-bottom: #fff 1px solid;
+}
+
+/* slider */
+
+.slider{
+    display: block;
 }
 
 
