@@ -1,3 +1,13 @@
+@font-face {font-family:"Open Sans Condensed Light";
+    src:url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.eot") format("eot"),
+    url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.woff") format("woff"),
+    url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.ttf") format("truetype"),
+    url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.svg#OpenSans-CondensedLight") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
 body{
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
@@ -54,6 +64,9 @@ body{
 
 .header__phones{
     font-family: "Open Sans Condensed Light", sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+    color: #777777;
 }
 
 .header__phone{
@@ -180,21 +193,19 @@ body{
 
 .slick-prev{
     left: 30%;
-    background: url(/images/slider-arrow-left.jpg);
+    background: url('../images/slider/slider-arrows/slider-arrow-left.jpg');
     background-size: contain;
 }
 
 .slick-next{
     right: 29%;
-    background: url(/images/slider-arrow-right.jpg);
+    background: url('../images/slider/slider-arrows/slider-arrow-right.jpg');
     background-size: contain;
 }
 
 
 
 /* burger menu */
-
-
 .burger__menu{
     display: block;
 }
@@ -427,14 +438,4 @@ body{
     .feedback__link{
         font-size: 13px;
     }
-}
-
-
-@font-face {font-family:"Open Sans Condensed Light";
-    src:url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.eot") format("eot"),
-    url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.woff") format("woff"),
-    url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.ttf") format("truetype"),
-    url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.svg#OpenSans-CondensedLight") format("svg");
-    font-weight:normal;
-    font-style:normal;
 }
