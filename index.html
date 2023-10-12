@@ -5,88 +5,278 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ваш заголовок</title>
+  <title>Компанія</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <button class="header__burger" id="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="header__inner">
-
-        <a href="#"><img src="images/header/logo.png" class="header__logo" width="273" height="100" alt="Логотип компанії"></a>
-        <div class="header__info">
-          <div class="header__phones">
-            <a class="header__phone" href="tel:+380997777777">+38(099) 777-77-77</a>
-            <a class="header__phone" href="tel:+380997777777">+38(099) 777-77-77</a>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <button class="header__burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__inner">
+          <a href="#"><img src="images/header/logo.png" class="header__logo" width="273" height="100"
+              alt="Логотип компанії"></a>
+          <div class="header__info">
+            <div class="header__phones">
+              <a class="header__phone" href="tel:+380997777777">+38(099) 777-77-77</a>
+              <a class="header__phone" href="tel:+380997777777">+38(099) 777-77-77</a>
+            </div>
+            <a class="feedback__link" href="#" id="open_feedback">Зворотній зв'язок</a>
           </div>
-          <a class="feedback__link" href="#">Зворотній зв'язок</a>
         </div>
       </div>
-    </div>
-    <div class="burger__menu">
-      <ul class="burger__menu__items">
-        <li class="burger__menu__item">
-          <a class="burger__menu__link" href="#">Головна</a>
-        </li>
-        <li class="burger__menu__item">
-          <a class="burger__menu__link" href="#">Каталог</a>
-        </li>
-        <li class="burger__menu__item">
-          <a class="burger__menu__link" href="#">Доставка і оплата</a>
-        </li>
-        <li class="burger__menu__item">
-          <a class="burger__menu__link" href="#">Прайс-лист</a>
-        </li>
-        <li class="burger__menu__item">
-          <a class="burger__menu__link" href="#">Контакти</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-
-
-  <menu class="menu">
-    <div class="container">
-      <ul class="menu__items">
-        <li class="menu__item">
-          <a class="menu__link" href="#">Головна</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Каталог</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Доставка і оплата</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Прайс-лист</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link last-menu__link" href="#">Контакти</a>
-        </li>
-      </ul>
-    </div>
-  </menu>
-
-  <slider class="slider">
-    <div class="slider__items">
-      <div class="slider__item">
-        <img src="images/slider/slider-photo/slider1.png" alt="imgSlider1">
+      <div class="burger__menu">
+        <ul class="burger__menu__items">
+          <li class="burger__menu__item">
+            <a class="burger__menu__link" href="#">Головна</a>
+          </li>
+          <li class="burger__menu__item">
+            <a class="burger__menu__link" href="#">Каталог</a>
+          </li>
+          <li class="burger__menu__item">
+            <a class="burger__menu__link" href="#">Доставка і оплата</a>
+          </li>
+          <li class="burger__menu__item">
+            <a class="burger__menu__link" href="#">Прайс-лист</a>
+          </li>
+          <li class="burger__menu__item">
+            <a class="burger__menu__link" href="#">Контакти</a>
+          </li>
+        </ul>
       </div>
-      <div class="slider__item">
-        <img src="images/slider/slider-photo/slider2.png" alt="imgSlider2">
+    </header>
+
+
+    <main class="main">
+      <menu class="menu">
+        <div class="container">
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Головна</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Доставка і оплата</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Прайс-лист</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link last-menu__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </menu>
+
+
+      <slider class="slider">
+        <div class="slider__items">
+          <div class="slider__item">
+            <img src="images/slider/slider-photo/slider1.png" alt="imgSlider1">
+          </div>
+          <div class="slider__item">
+            <img src="images/slider/slider-photo/slider2.png" alt="imgSlider2">
+          </div>
+        </div>
+      </slider>
+
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs-items">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Головна</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Каталог</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Побутова техніка</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </slider>
+
+
+      <div class="content">
+        <div class="container container__content">
+          <div class="content__leftblock">
+            <ul class="categories">
+              <li class="category__item">
+                <a class="category__item-title" href="#">Автомобілі</a>
+                <ul class="category__item-list">
+                  <li><a href="#">Седани</a></li>
+                  <li><a href="#">Купе</a></li>
+                  <li><a href="#">Хетчбеки</a></li>
+                  <li><a href="#">Кабріолети</a></li>
+                </ul>
+              </li>
+              <li class="category__item">
+                <a class="category__item-title" href="#">Побутова техніка</a>
+                <ul class="category__item-list">
+                  <li><a href="#">Мікрохвильовки</a></li>
+                  <li><a href="#">Холодильники</a></li>
+                  <li><a href="#">Посудомийні машини</a></li>
+                  <li><a href="#">Чайники</a></li>
+                </ul>
+              </li>
+              <li class="category__item">
+                <a class="category__item-title" href="#">Мобільна техніка</a>
+                <ul class="category__item-list">
+                  <li><a href="#">Смартфони</a></li>
+                  <li><a href="#">Планшети</a></li>
+                  <li><a href="#">Навушники</a></li>
+                  <li><a href="#">Аксесуари</a></li>
+                </ul>
+              </li>
+              <li class="category__item">
+                <a class="category__item-title" href="#">Комп'ютери</a>
+                <ul class="category__item-list">
+                  <li><a href="#">Моноблоки</a></li>
+                  <li><a href="#">Ноутбуки</a></li>
+                  <li><a href="#">Принтери</a></li>
+                  <li><a href="#">Клавіатури і миші</a></li>
+                </ul>
+              </li>
+              <li class="category__item">
+                <a class="category__item-title" href="#">Одяг</a>
+                <ul class="category__item-list">
+                  <li><a href="#">Чоловічий одяг</a></li>
+                  <li><a href="#">Жіночий одяг</a></li>
+                  <li><a href="#">Дитячий одяг</a></li>
+                </ul>
+              </li>
+              <li class="category__item">
+                <a class="category__item-title" href="#">Нерухомість</a>
+                <ul class="category__item-list">
+                  <li><a href="#">Квартири</a></li>
+                  <li><a href="#">Будинки</a></li>
+                  <li><a href="#">Земельні ділянки</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="leftblock__image">
+              <img src="images/content/leftblock/logoExcel.png" width="97" height="111" alt="logoExcel">
+              <p class="leftblock__image-text">Прайс-лист</p>
+            </div>
+          </div>
+          <div class="content__centerblock">
+            <div class="content__block-card">
+              <div class="content__goods-card">
+                <img class="content__good-photo" src="images/content/centerblock/photoOfGood.jpg" alt="Photo of goods">
+                <a href="#">
+                  <p class="content__good-info">Найкращий чайник, який треба купити!</p>
+                </a>
+                <p class="content__good-price">1 900 грн.</p>
+                <a href="#" class="content__good-basket-a"><img class="content__good-basket"
+                    src="images/content/centerblock/addtobasket.png" alt="Add to basket"></a>
+              </div>
+              <div class="content__goods-card">
+                <img class="content__good-photo" src="images/content/centerblock/photoOfGood.jpg" alt="Photo of goods">
+                <a href="#">
+                  <p class="content__good-info">Найкращий чайник, який треба купити!</p>
+                </a>
+                <p class="content__good-price">1 900 грн.</p>
+                <a href="#" class="content__good-basket-a"><img class="content__good-basket"
+                    src="images/content/centerblock/addtobasket.png" alt="Add to basket"></a>
+              </div>
+              <div class="content__goods-card">
+                <img class="content__good-photo" src="images/content/centerblock/photoOfGood.jpg" alt="Photo of goods">
+                <a href="#">
+                  <p class="content__good-info">Найкращий чайник, який треба купити!</p>
+                </a>
+                <p class="content__good-price">1 900 грн.</p>
+                <a href="#" class="content__good-basket-a"><img class="content__good-basket"
+                    src="images/content/centerblock/addtobasket.png" alt="Add to basket"></a>
+              </div>
+              <div class="content__goods-card">
+                <img class="content__good-photo" src="images/content/centerblock/photoOfGood.jpg" alt="Photo of goods">
+                <a href="#">
+                  <p class="content__good-info">Найкращий чайник, який треба купити!</p>
+                </a>
+
+                <p class="content__good-price">1 900 грн.</p>
+                <a href="#" class="content__good-basket-a"><img class="content__good-basket"
+                    src="images/content/centerblock/addtobasket.png" alt="Add to basket"></a>
+              </div>
+              <div class="content__goods-card">
+                <img class="content__good-photo" src="images/content/centerblock/photoOfGood.jpg" alt="Photo of goods">
+                <a href="#">
+                  <p class="content__good-info">Найкращий чайник, який треба купити!</p>
+                </a>
+                <p class="content__good-price">1 900 грн.</p>
+                <a href="#" class="content__good-basket-a"><img class="content__good-basket"
+                    src="images/content/centerblock/addtobasket.png" alt="Add to basket"></a>
+              </div>
+            </div>
+            <div class="pagination">
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#" class="active">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+            </div>
+            <div class="content__horizon-line"></div>
+            <div class="content__info">
+              <p>Компанія "Піксель Плюс" існує понад 6 років, за цей час ми брали участь у розробці більш ніж 700
+                сайтів,
+                тому можемо впевнено називати себе професіоналами. На даний момент наш колектив складається з більш ніж
+                30
+                співробітників, які працюють у двох офісах у Харкові та Києві.характерні для цього жанру мотиви:
+                нерозділеного кохання, відходу молодості, згасання душі. </p>
+              <p>Одним з основних напрямків робіт нашої компанії є пошукове просування сайтів, на даний момент ми
+                працюємо
+                з більш ніж 150 постійними клієнтами по більш ніж 11 000 пошукових запитах. При цьому в роботі основний
+                акцент ми робимо на якості робіт, а так само застосовуємо власні унікальні розробки в області SEO
+                просування. На даний момент відділ SEO складається з 9 осіб під керівництвом провідного фахівця, які
+                переважно працюють в нашому київському офісі.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <p class="footer__info-name">© 2012–2013 ЗАО «Компанія»</p>
+            <p class="footer__info-email">info@name.ru</p>
+          </div>
+          <ul class="footer__menu">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка і оплата</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+          <div class="footer__company-maker">
+            <a href="#" class="footer__company-maker-logo"><img src="images/footer/companyLogo.png"></a>
+            <p class="footer__company-maker-text"><a href="#">Розробка сайту</a> - компанія "Піксель Плюс"</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/slick.min.js"></script>

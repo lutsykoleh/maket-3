@@ -12,6 +12,7 @@ $(document).ready(function(){
         fade:true,
         slidesToScroll: 1,
         slidesToShow: 1,
+        cssEase: 'linear',
+        swipeToSlide: true
     })
 });
-
