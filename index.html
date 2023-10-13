@@ -251,13 +251,35 @@
       </div>
     </main>
 
-    
+    <div class="feedback" id="feedback">
+      <a href="#" class="feedback__area"></a>
+      <div class="feedback__body">
+        <div class="feedback__content">
+          <a href="#" class="feedback__close-btn"><img src="../images/close.png" alt=""></a>
+          <form class="feedback__form">
+            <p class="feedback__title">Зворотній зв'язок</p>
+            <label>Ваше ім'я<span class="required"> *</span> <br></label>
+              <input type="text" class="feedback__form-name js-input" placeholder="">
+            <label>Телефон<span class="required"> *</span> <br></label >
+              <input type="tel" class="feedback__form-tel js-input" placeholder="">
+            <label>Email<span class="required"> *</span> <br></label>
+              <input type="email" class="feedback__form-email js-input" placeholder="">
+            <label>Повідомлення<br></label>
+              <textarea class="feedback__message"></textarea>
+            <button class="feedback__form-btn" onclick="validateForm()">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__info">
             <p class="footer__info-name">© 2012–2013 ЗАО «Компанія»</p>
-            <p class="footer__info-email">info@name.ru</p>
+            <a href="mailto:info@name.ru" class="footer__info-email">info@name.ru</a>
           </div>
           <ul class="footer__menu">
             <li><a href="#">Головна</a></li>
