@@ -1,12 +1,14 @@
 @font-face {
-    font-family: "Open Sans Condensed Light";
-    src: url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.eot") format("eot"),
-        url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.woff") format("woff"),
-        url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.ttf") format("truetype"),
-        url("/fonts/OpenSansCondensedLight/OpenSans-CondLight.svg#OpenSans-CondensedLight") format("svg");
-    font-weight: normal;
+    font-family: 'Open Sans Condensed Light';
+    src: url('fonts/OpenSansCondensedLight/OpenSans-CondLight.woff2') format('woff2'),
+         url('fonts/OpenSansCondensedLight/OpenSans-CondLight.woff') format('woff'),
+         url('fonts/OpenSansCondensedLight/OpenSans-CondLight.eot') format('embedded-opentype'),
+         url('fonts/OpenSansCondensedLight/OpenSans-CondLight.ttf') format('truetype'),
+         url('fonts/OpenSansCondensedLight/OpenSans-CondLight.svg#OpenSans-CondensedLight') format('svg');
+    font-weight: 300;
     font-style: normal;
 }
+
 
 html,
 body {
