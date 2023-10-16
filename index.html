@@ -19,11 +19,6 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <button class="header__burger" id="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
         <div class="header__inner">
           <a href="#"><img src="images/header/logo.png" class="header__logo" width="273" height="100"
               alt="Логотип компанії"></a>
@@ -36,31 +31,17 @@
           </div>
         </div>
       </div>
-      <div class="burger__menu">
-        <ul class="burger__menu__items">
-          <li class="burger__menu__item">
-            <a class="burger__menu__link" href="#">Головна</a>
-          </li>
-          <li class="burger__menu__item">
-            <a class="burger__menu__link" href="#">Каталог</a>
-          </li>
-          <li class="burger__menu__item">
-            <a class="burger__menu__link" href="#">Доставка і оплата</a>
-          </li>
-          <li class="burger__menu__item">
-            <a class="burger__menu__link" href="#">Прайс-лист</a>
-          </li>
-          <li class="burger__menu__item">
-            <a class="burger__menu__link" href="#">Контакти</a>
-          </li>
-        </ul>
-      </div>
     </header>
 
 
     <main class="main">
       <menu class="menu">
         <div class="container">
+          <button class="menu__burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <ul class="menu__items">
             <li class="menu__item">
               <a class="menu__link" href="#">Головна</a>
@@ -255,19 +236,20 @@
       <a href="#" class="feedback__area"></a>
       <div class="feedback__body">
         <div class="feedback__content">
-          <a href="#" class="feedback__close-btn"><img src="../images/close.png" alt=""></a>
+          <a href="#" class="feedback__close-btn"><img src="images/close.png" alt=""></a>
           <form class="feedback__form">
             <p class="feedback__title">Зворотній зв'язок</p>
             <label>Ваше ім'я<span class="required"> *</span> <br></label>
-              <input type="text" class="feedback__form-name js-input" placeholder="">
-            <label>Телефон<span class="required"> *</span> <br></label >
-              <input type="tel" class="feedback__form-tel js-input" placeholder="">
+              <input type="text" class="feedback__form-name js-input" pattern="^[А-ЯІЇЄҐ][а-яіїєґ'`]*$" placeholder="Поле обов'язкове для заповнення" required>
+            <label>Телефон<span class="required"> *</span> <br></label>
+              <input type="tel" class="feedback__form-tel js-input" pattern="^\+380\d{9}$" placeholder="Поле обов'язкове для заповнення" required>
             <label>Email<span class="required"> *</span> <br></label>
-              <input type="email" class="feedback__form-email js-input" placeholder="">
+              <input type="email" class="feedback__form-email js-input" placeholder="Поле обов'язкове для заповнення" required>
             <label>Повідомлення<br></label>
               <textarea class="feedback__message"></textarea>
-            <button class="feedback__form-btn" onclick="validateForm()">Відправити</button>
-          </form>
+            <button class="feedback__form-btn" type="submit">Відправити</button>
+        </form>
+        
         </div>
       </div>
     </div>

@@ -44,14 +44,6 @@ body {
     z-index: 50;
 }
 
-.header__burger {
-    display: none;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border: none;
-}
-
 .header__logo {
     margin-top: 65px;
     margin-bottom: 65px;
@@ -116,6 +108,15 @@ body {
     align-items: center;
     height: 80px;
 }
+
+.menu__burger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
 
 .menu__items {
     display: flex;
@@ -537,12 +538,15 @@ body {
     color: #fff;
     background: #777;
     border: 1px solid #858585;
+    cursor: pointer;
+    z-index: 1502;
 }
 
-.error {
-    border: 1px solid #ff8383;
-    box-shadow: inset 0 0 6.5px rgba(228,106,106,0.75);
-    color: #ff8383;
+
+input:invalid,
+input:out-of-range {
+  border-color: #ff8383;
+  box-shadow: inset 0 0 6.5px rgba(228,106,106,0.75); 
 }
 
 /* footer */
@@ -603,13 +607,8 @@ body {
 
 
 /* burger menu */
-.burger__menu {
-    display: block;
-}
-
-.burger__menu__items {
+.menu__burger {
     display: none;
-    padding-inline-start: 20px;
 }
 
 .burger__menu li {
@@ -625,33 +624,32 @@ body {
     border-bottom: white 1px solid;
 }
 
-.header__burger span {
+.menu__burger span {
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: black;
-    left: 5px;
+    background-color: #000;
     z-index: 1115;
     transition: transform .5s, opacity .5s, background-color .5s;
 }
 
-.header__burger span:nth-child(1) {
+.menu__burger span:nth-child(1) {
     transform: translateY(-10px);
 }
 
-.header__burger span:nth-child(3) {
+.menu__burger span:nth-child(3) {
     transform: translateY(10px);
 }
 
-.header.open .header__burger span:nth-child(1) {
+.menu.open .menu__burger span:nth-child(1) {
     transform: translateY(0) rotate(-45deg);
 }
 
-.header.open .header__burger span:nth-child(2) {
+.menu.open .menu__burger span:nth-child(2) {
     opacity: 0
 }
 
-.header.open .header__burger span:nth-child(3) {
+.menu.open .menu__burger span:nth-child(3) {
     transform: translateY(0) rotate(45deg);
 }
 
@@ -778,49 +776,20 @@ body {
         max-width: 720px;
     }
 
-    .menu {
-        display: none;
-    }
-
-
     .header.open .burger__menu {
         transform: translateX(100%);
     }
 
-    .header__burger {
+    .menu__burger {
         display: block;
         background-color: transparent;
-        top: 20px;
         z-index: 1112;
-    }
-
-    .burger__menu {
-        position: absolute;
-        left: -230px;
-        top: 0;
-        width: 230px;
-        background-color: gray;
-        align-items: normal;
-        height: 300px;
-        padding-top: 60px;
-        z-index: 100;
-    }
-
-    .burger__menu__items {
-        display: block;
-    }
-
-    .burger__menu__link {
-        color: white;
-        font-size: 21px;
-        display: block;
-        padding: 10px 0;
-        transition: transform 0.5s;
+        margin: 0 auto;
     }
 
     .header {
         width: 100%;
-        height: 100px;
+        height: 100%;
         margin: 0;
         padding: 0;
         z-index: 1115;
@@ -832,7 +801,7 @@ body {
         margin: 0;
         padding-left: 35px;
         top: 0px;
-        margin-top: -20px;
+        margin-top: 20px;
         width: 136.2px;
         height: 50px;
     }
@@ -851,7 +820,7 @@ body {
     }
 
     .header__info {
-        margin-top: -25px;
+        margin: 25px 0 25px auto;
     }
 
     .header__inner {
@@ -862,6 +831,45 @@ body {
         width: 23.3px;
         height: 45px;
     }
+
+    .menu{
+        height: 100%;
+    }
+
+    .menu__item{
+        margin: 0 auto;
+    }
+
+    .menu__items{
+        padding: 0;
+    }
+
+    .menu__link::after{
+        display: none;
+    }
+
+    .menu .menu__items{
+        display: none;
+    }
+
+    .menu.open .menu__items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger__menu__items {
+        display: block;
+    }
+
+    .burger__menu__link {
+        color: white;
+        font-size: 21px;
+        display: block;
+        padding: 10px 0;
+        transition: transform 0.5s;
+    }
+
+    
 
 }
 
@@ -938,6 +946,9 @@ body {
         width: 80%;
     }
 
+    .menu__link{
+        font-size: 20px;
+    }
 
 }
 
